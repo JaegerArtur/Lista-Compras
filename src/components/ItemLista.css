@@ -1,0 +1,8 @@
+li {
+  gap: 4px;
+  padding: 5px;
+  justify-content: space-between;
+  width: 40%;
+  .botoes {
+  }
+}

@@ -65,15 +65,25 @@ h1 {
   margin-top: 15px;
   .lista {
     width: 45%;
+    height: 100%;
     padding: 10px;
     border-radius: 7px;
     background-color: var(--sunlit-clay);
     color: var(--cornsilk);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: auto;
+    gap: 5px;
     h2 {
       font-size: x-large;
       justify-self: center;
+    }
+    ul {
+      height: calc(70dvh - 60px);
+      column-count: 2;
+      column-gap: 16px;
+      column-fill: auto;
+      overflow: auto;
     }
   }
 }
